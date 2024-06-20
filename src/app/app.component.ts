@@ -16,12 +16,12 @@ export class AppComponent {
   selectedUserId = 'u1';
 
   get selectedUser() {
-    return this.users.find(user => user.id === this.selectedUserId)!;
+    return this.users.find(user => user.id === this.selectedUserId);
   }
 
-  OnSelectUser(id: string) {
+  onSelectUser(id: string) {
     // if (DUMMY_USERS.find(user => user.id === id))
-    //   this.selectedUserId = DUMMY_USERS.find(user => user.id === id)!.name;
+    // this.selectedUserId = DUMMY_USERS.find(user => user.id === id)!.name;
     this.selectedUserId = id;
   }
 }
